@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -808,9 +807,18 @@
             opacity: 0;
             transform: translateY(24px);
             transition: all 0.7s var(--ease-out);
+            animation: showFallback 0.7s 0.3s forwards;
+        }
+
+        @keyframes showFallback {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .fade-up.visible {
+            animation: none;
             opacity: 1;
             transform: translateY(0);
         }
@@ -1368,7 +1376,7 @@
                     <h4>Kontakt</h4>
                     <ul>
                         <li><a href="tel:+971585373009">+971 585 373 009</a></li>
-                        <li><a href="/cdn-cgi/l/email-protection#234a4d454c635146535657465b11170d4746"><span class="__cf_email__" data-cfemail="a6cfc8c0c9e6d4c3d6d3d2c3de949288c2c3">[email&#160;protected]</span></a></li>
+                        <li><a href="/cdn-cgi/l/email-protection#f0999e969fb082958085849588c2c4de9495"><span class="__cf_email__" data-cfemail="f891969e97b88a9d888d8c9d80caccd69c9d">[email&#160;protected]</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -1394,7 +1402,7 @@
             <h3>Angaben gemäß § 5 TMG</h3>
             <p>B2B Media L.L.C-FZ<br>Meydan Grandstand, 6th floor<br>Meydan Road, Nad Al Sheba<br>Dubai, UAE</p>
             <h3>Kontakt</h3>
-            <p>Telefon: +971 – 585 373 009<br>E-Mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="10797e767f506275606564756822243e7475">[email&#160;protected]</a></p>
+            <p>Telefon: +971 – 585 373 009<br>E-Mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a3cacdc5cce3d1c6d3d6d7c6db91978dc7c6">[email&#160;protected]</a></p>
             <h3>Verantwortlich für den Inhalt</h3>
             <p>B2B Media L.L.C-FZ<br>Meydan Grandstand, 6th floor<br>Meydan Road, Nad Al Sheba<br>Dubai, UAE</p>
         </div>
@@ -1413,7 +1421,7 @@
             <h3>2. Datenerfassung auf unserer Website</h3>
             <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.</p>
             <h3>3. Kontakt</h3>
-            <p>Bei Fragen zum Datenschutz können Sie sich jederzeit an uns wenden: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4e272028210e3c2b3e3b3a2b367c7a602a2b">[email&#160;protected]</a></p>
+            <p>Bei Fragen zum Datenschutz können Sie sich jederzeit an uns wenden: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2a43444c456a584f5a5f5e4f52181e044e4f">[email&#160;protected]</a></p>
         </div>
     </div>
 
@@ -1448,7 +1456,14 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+            // Fix: Check if element is already in viewport on page load
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                el.classList.add('visible');
+            }
+        });
 
         // FAQ accordion
         document.querySelectorAll('.faq-item').forEach(item => {
@@ -1491,4 +1506,3 @@
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor =
-Displaying index.html.
