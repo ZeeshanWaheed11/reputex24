@@ -2,10 +2,25 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect rx=%2215%22 width=%22100%22 height=%22100%22 fill=%22%23c9a84c%22/><text x=%2250%22 y=%2268%22 font-size=%2250%22 text-anchor=%22middle%22 fill=%22white%22>✓</text></svg>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reputex24 – Premium Reputationsmanagement</title>
-    <meta name="description" content="Exklusives Bewertungsmanagement für anspruchsvolle Unternehmen. Negative Google-Bewertungen rechtssicher entfernen – erfolgsbasiert und diskret.">
+    <title>Premium Reputationsmanagement | Negative Bewertungen entfernen | Reputex24</title>
+    <meta name="description" content="Exklusives Reputationsmanagement für anspruchsvolle Unternehmen. Negative Google-Bewertungen rechtssicher entfernen – erfolgsbasiert, diskret und professionell.">
     <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Reputationsmanagement, Google Bewertungen entfernen, negative Rezensionen löschen, Premium Bewertungsschutz, Online Reputation Management, Fake Bewertungen entfernen lassen">
+    <link rel="canonical" href="https://reputex24.de/">
+    <meta property="og:title" content="Premium Reputationsmanagement | Negative Bewertungen entfernen | Reputex24">
+    <meta property="og:description" content="Exklusives Reputationsmanagement für anspruchsvolle Unternehmen. Negative Google-Bewertungen rechtssicher entfernen – erfolgsbasiert, diskret und professionell.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reputex24.de/">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:site_name" content="Reputex24">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Premium Reputationsmanagement | Negative Bewertungen entfernen | Reputex24">
+    <meta name="twitter:description" content="Exklusives Reputationsmanagement für anspruchsvolle Unternehmen. Negative Google-Bewertungen rechtssicher entfernen – erfolgsbasiert, diskret und professionell.">
+    <meta name="geo.region" content="DE">
+    <meta name="geo.placename" content="Deutschland">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -612,7 +627,65 @@
             .lottie-metrics{flex-direction:column;gap:1rem;align-items:center}
             .process-row{grid-template-columns:1fr}
         }
+    
+        @media(prefers-reduced-motion:reduce){
+            *,.reveal,.hero h1,.hero-text,.hero-ctas,.hero-eyebrow,.hero-visual,.star-animation .star,.float-card{animation:none!important;transition:none!important;opacity:1!important;transform:none!important}
+        }
+    
+        .scroll-top{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;background:#c9a84c;color:var(--dark);border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:all .3s;z-index:900;box-shadow:0 4px 15px rgba(0,0,0,.2);font-size:1.1rem}
+        .scroll-top.visible{opacity:1;pointer-events:all}
+        .scroll-top:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.3)}
+    
+        .c-submit.loading{opacity:.7;pointer-events:none;position:relative}
+        .c-submit.loading::after{content:'';width:16px;height:16px;border:2px solid transparent;border-top-color:currentColor;border-radius:50%;animation:spin .6s linear infinite;display:inline-block;margin-left:8px;vertical-align:middle}
+        @keyframes spin{to{transform:rotate(360deg)}}
+    
+        @media(max-width:480px){.h-badge-label,.lm-label,.section-eyebrow,.t-role,.ht-role,.faq-arrow{font-size:.75rem}.float-card,.fc-stars{font-size:.7rem}}
+    
+        section[id]{scroll-margin-top:80px}
+    
+        .mobile-cta-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:998;padding:.75rem 1rem;background:inherit;border-top:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+        .mobile-cta-bar a{display:block;width:100%;text-align:center;padding:.85rem;border-radius:8px;font-weight:700;font-size:.9rem;text-decoration:none;transition:all .3s}
+        @media(max-width:900px){.mobile-cta-bar{display:block}footer{padding-bottom:5rem}.scroll-top{bottom:5.5rem}}
+    
+        .cookie-bar{position:fixed;bottom:0;left:0;right:0;z-index:9999;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;font-size:.82rem;line-height:1.5;transition:transform .4s;flex-wrap:wrap}
+        .cookie-bar.hidden{transform:translateY(110%)}
+        .cookie-text{flex:1;min-width:200px}
+        .cookie-text a{color:inherit;text-decoration:underline}
+        .cookie-btn{padding:.55rem 1.4rem;border:none;border-radius:6px;font-weight:700;font-size:.8rem;cursor:pointer;white-space:nowrap;transition:opacity .2s;font-family:inherit}
+        .cookie-btn:hover{opacity:.85}
+        @media(max-width:900px){.cookie-bar{bottom:60px}}
+    
+        @media(max-width:480px){.hero-ctas{flex-direction:column}.hero-ctas .btn-coral,.hero-ctas .btn-emerald,.hero-ctas .btn-cyan,.hero-ctas .btn-gold,.hero-ctas .btn-indigo,.hero-ctas a[class*="btn-"]{width:100%;justify-content:center;text-align:center}.hero-ctas .btn-link{justify-content:center}}
     </style>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Reputex24",
+        "url": "https://reputex24.de/",
+        "telephone": "+4930754373980",
+        "email": "info@bewertungsschutz24.com",
+        "description": "Exklusives Reputationsmanagement für anspruchsvolle Unternehmen. Negative Google-Bewertungen rechtssicher entfernen – erfolgsbasiert, diskret und professionell.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Meydan Grandstand, 6th Floor, Meydan Road",
+            "addressLocality": "Dubai",
+            "addressCountry": "AE"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Germany"
+        },
+        "priceRange": "Erfolgsbasiert",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127"
+        },
+        "serviceType": ["Reputationsmanagement", "Google Bewertungen entfernen", "Online Reputation Management"]
+    }
+    </script>
 </head>
 <body>
 
@@ -786,18 +859,23 @@
             <div class="contact-cta reveal">
                 <h2 data-i18n="cta.title">Schützen Sie, was zählt.</h2>
                 <p data-i18n="cta.desc">Kostenlose Analyse – erfahren Sie Ihre Möglichkeiten.</p>
-                <form class="contact-form" onsubmit="event.preventDefault();alert(currentLang==='de'?'Vielen Dank! Wir melden uns umgehend bei Ihnen.':'Thank you! We will contact you shortly.');">
+                <form class="contact-form" action="https://formsubmit.co/service@uranus24.de" method="POST">
+                    <input type="hidden" name="_subject" value="Neue Anfrage über Reputex24">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://reputex24.de/">
+                    <input type="text" name="_honey" style="display:none">
                     <div class="c-row">
-                        <input type="text" data-i18n-ph="ph.name" placeholder="Ihr Name" required>
-                        <input type="text" data-i18n-ph="ph.company" placeholder="Unternehmen">
+                        <input type="text" data-i18n-ph="ph.name" placeholder="Ihr Name" name="Name" required>
+                        <input type="text" data-i18n-ph="ph.company" placeholder="Unternehmen" name="Unternehmen">
                     </div>
-                    <input type="email" data-i18n-ph="ph.email" placeholder="E-Mail-Adresse" required>
-                    <textarea data-i18n-ph="ph.msg" placeholder="Beschreiben Sie Ihr Anliegen..."></textarea>
+                    <input type="email" data-i18n-ph="ph.email" placeholder="E-Mail-Adresse" name="Email" required>
+                    <textarea data-i18n-ph="ph.msg" placeholder="Beschreiben Sie Ihr Anliegen..." name="Nachricht"></textarea>
                     <button type="submit" class="c-submit" data-i18n="cta.submit">Kostenlose Analyse anfordern →</button>
                 </form>
                 <div class="contact-meta">
-                    <a href="tel:+971585373009">+971 585 373 009</a>
-                    <a href="mailto:info@reputex24.de">info@reputex24.de</a>
+                    <a href="tel:+4930754373980">+49 30 754 373 980</a>
+                    <a href="mailto:info@bewertungsschutz24.com">info@bewertungsschutz24.com</a>
                 </div>
             </div>
         </div>
@@ -806,6 +884,7 @@
     <!-- FOOTER -->
     <footer>
         <p>© 2026 Reputex24. <span data-i18n="ft.rights">Alle Rechte vorbehalten.</span></p>
+        <p style="color:var(--text-muted);font-size:.7rem;margin-top:.3rem" data-i18n="ft.built">Webseite erstellt von <a href="https://imisofts.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;transition:color .3s">imisofts.com</a></p>
         <div class="footer-links">
             <a href="#" onclick="event.preventDefault();openModal('impressum')">Impressum</a>
             <a href="#" onclick="event.preventDefault();openModal('datenschutz')" data-i18n="ft.privacy">Datenschutz</a>
@@ -820,7 +899,7 @@
             <h3 data-i18n="imp.h1">Angaben gemäß § 5 TMG</h3>
             <p>B2B Media L.L.C-FZ<br>Meydan Grandstand, 6th Floor<br>Meydan Road, Nad Al Sheba<br>Dubai, UAE</p>
             <h3 data-i18n="imp.h2">Kontakt</h3>
-            <p>Tel: +971 – 585 373 009<br>E-Mail: info@reputex24.de</p>
+            <p>Tel: +49 – 30 754 373 980<br>E-Mail: info@bewertungsschutz24.com</p>
         </div>
     </div>
 
@@ -833,13 +912,31 @@
             <h3 data-i18n="priv.h2">2. Datenverarbeitung</h3>
             <p data-i18n="priv.p2">Personenbezogene Daten werden nur im Rahmen gesetzlicher Bestimmungen verarbeitet. Über das Kontaktformular erhobene Daten dienen ausschließlich der Bearbeitung Ihrer Anfrage und werden nicht an Dritte weitergegeben.</p>
             <h3 data-i18n="priv.h3">3. Ihre Rechte</h3>
-            <p data-i18n="priv.p3">Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung. Kontaktieren Sie uns unter info@reputex24.de.</p>
+            <p data-i18n="priv.p3">Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung. Kontaktieren Sie uns unter info@bewertungsschutz24.com.</p>
         </div>
     </div>
 
+
+
+    
+    <div class="mobile-cta-bar" id="mobileCta" style="background:rgba(10,10,10,0.95)">
+        <a href="#kontakt" style="background:var(--gold);color:var(--dark)" data-i18n="mobile.cta">Beratung anfragen</a>
+    </div>
+    
+
+
+    
+    <div class="cookie-bar hidden" id="cookieBar" style="background:rgba(250,250,250,0.97);color:#1a1a1a">
+        <span class="cookie-text" data-i18n="cookie.text">Diese Website verwendet keine Tracking-Cookies. Durch die Nutzung stimmen Sie unserer <a href="#" onclick="event.preventDefault();openModal('datenschutz')">Datenschutzerklärung</a> zu.</span>
+        <button class="cookie-btn" data-i18n="cookie.btn" onclick="document.getElementById('cookieBar').classList.add('hidden');localStorage.setItem('cookie_ok','1')" style="background:var(--gold);color:#0a0a0a">Verstanden</button>
+    </div>
+
+
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">↑</button>
+
     <script>
-    const T={de:{'nav.features':'Leistungen','nav.process':'Prozess','nav.testimonials':'Erfahrungen','nav.cta':'Beratung anfragen','hero.eyebrow':'Premium Reputationsmanagement','hero.title':'Ihr guter Ruf verdient den besten Schutz. Wir liefern ihn.','hero.text':'Reputex24 verbindet juristische Exzellenz mit diskretem Bewertungsmanagement – für Unternehmen, die keine Kompromisse eingehen. Erfolgsbasiert, vertraulich, wirkungsvoll.','hero.cta':'Kostenlose Analyse →','hero.link':'So funktioniert es →','hero.quote':'Reputex24 hat fünf kritische Bewertungen innerhalb von zwei Wochen professionell entfernt. Unser Rating stieg von 3,4 auf 4,6 – die Auswirkung auf das Geschäft war sofort spürbar.','hero.role':'Geschäftsführer, Privatklinik Düsseldorf','hero.stat1':'Erfolgsquote','hero.stat2':'Entfernt','hero.stat3':'Ø Dauer','lottie.title':'Exzellenz im Reputationsmanagement','lottie.text':'Mehr als 2.400 erfolgreich entfernte Bewertungen. Unsere Mandanten profitieren von diskreten, rechtssicheren Lösungen mit nachweisbaren Ergebnissen.','lottie.s1':'Ø Rating danach','lottie.s2':'Mehr Neukunden','lottie.s3':'Ø Bearbeitungszeit','feat.eye':'Unsere Leistungen','feat.title':'Premium-Schutz für Ihre Online-Reputation','feat.desc':'Maßgeschneiderte Lösungen für anspruchsvolle Unternehmen.','f1.t':'Erfolgsbasiert','f1.p':'Kein Honorar ohne Ergebnis. Sie zahlen ausschließlich bei nachgewiesener Löschung.','f2.t':'Juristisch fundiert','f2.p':'Jede Maßnahme stützt sich auf geltendes Recht und aktuelle Plattform-Richtlinien.','f3.t':'Absolute Diskretion','f3.p':'Vertraulichkeit ist für uns nicht verhandelbar. Ihr Name bleibt geschützt.','f4.t':'Schnelle Ergebnisse','f4.p':'Durchschnittlich 14 Tage bis zur erfolgreichen Entfernung der Bewertung.','f5.t':'Persönliche Betreuung','f5.p':'Ein dedizierter Experte begleitet Ihren Fall vom ersten Gespräch bis zum Ergebnis.','f6.t':'Langfristiger Schutz','f6.p':'Nachhaltige Reputation-Absicherung auch über die initiale Bearbeitung hinaus.','proc.eye':'Unser Prozess','proc.title':'Vier Schritte zu Ihrem Ergebnis','s1.t':'Bewertungsanalyse','s1.p':'Kostenlose Prüfung aller Bewertungen auf rechtliche Angriffspunkte.','s2.t':'Strategieentwicklung','s2.p':'Maßgeschneiderter Plan für maximale Erfolgsaussichten.','s3.t':'Durchsetzung','s3.p':'Professionelle Umsetzung über alle verfügbaren rechtlichen Wege.','s4.t':'Ergebnis','s4.p':'Bewertung gelöscht – erst dann erfolgt die Abrechnung.','test.eye':'Mandantenstimmen','test.title':'Das sagen unsere Mandanten','t1.q':'„Vier negative Bewertungen in 12 Tagen entfernt. Die Professionalität und Diskretion von Reputex24 haben uns restlos überzeugt."','t1.r':'Inhaber, Rechtsanwaltskanzlei Köln','t2.q':'„Endlich ein Partner, der versteht, was Online-Reputation für ein Unternehmen bedeutet. Ergebnisorientiert und absolut vertraulich."','t2.r':'Inhaberin, Zahnarztpraxis Stuttgart','t3.q':'„Das erfolgsbasierte Modell hat uns sofort angesprochen. Kein Risiko, klare Kommunikation und ein hervorragendes Ergebnis."','t3.r':'Geschäftsführer, Hotelgruppe Bayern','faq.eye':'Häufige Fragen','faq.title':'Ihre Fragen – unsere Antworten','q1.q':'Ist die Entfernung von Google-Bewertungen legal?','q1.a':'Ja, absolut. Wir nutzen ausschließlich legale Methoden. Bewertungen, die gegen Recht oder Plattform-Richtlinien verstoßen, können auf rechtmäßigem Weg entfernt werden.','q2.q':'Was bedeutet „erfolgsbasiert" bei Reputex24?','q2.a':'Sie zahlen ausschließlich bei erfolgreicher Löschung. Kein Erfolg, keine Kosten – garantiert und ohne Ausnahme.','q3.q':'Wie lange dauert der Prozess?','q3.a':'In der Regel 7 bis 21 Tage. Die genaue Dauer hängt von der Komplexität des jeweiligen Falls ab.','q4.q':'Welche Bewertungen können entfernt werden?','q4.a':'Unwahre Behauptungen, Fake-Bewertungen, Bewertungen von Nicht-Kunden sowie Verstöße gegen Google-Richtlinien – wir prüfen jeden Fall individuell.','q5.q':'Erfährt der Bewertende von der Entfernung?','q5.a':'Nein. Der gesamte Vorgang ist streng vertraulich. Der Verfasser wird weder kontaktiert noch informiert.','cta.title':'Schützen Sie, was zählt.','cta.desc':'Kostenlose Analyse – erfahren Sie Ihre Möglichkeiten.','cta.submit':'Kostenlose Analyse anfordern →','ft.rights':'Alle Rechte vorbehalten.','ft.privacy':'Datenschutz','imp.h1':'Angaben gemäß § 5 TMG','imp.h2':'Kontakt','priv.title':'Datenschutzerklärung','priv.h1':'1. Verantwortlicher','priv.h2':'2. Datenverarbeitung','priv.p2':'Personenbezogene Daten werden nur im Rahmen gesetzlicher Bestimmungen verarbeitet. Über das Kontaktformular erhobene Daten dienen ausschließlich der Bearbeitung Ihrer Anfrage und werden nicht an Dritte weitergegeben.','priv.h3':'3. Ihre Rechte','priv.p3':'Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung. Kontaktieren Sie uns unter info@reputex24.de.','ph.name':'Ihr Name','ph.company':'Unternehmen','ph.email':'E-Mail-Adresse','ph.msg':'Beschreiben Sie Ihr Anliegen...'},
-    en:{'nav.features':'Services','nav.process':'Process','nav.testimonials':'Reviews','nav.cta':'Request Consultation','hero.eyebrow':'Premium Reputation Management','hero.title':'Your reputation deserves the finest protection. We deliver it.','hero.text':'Reputex24 combines legal excellence with discreet review management – for businesses that accept no compromises. Success-based, confidential, effective.','hero.cta':'Free Analysis →','hero.link':'How it works →','hero.quote':'Reputex24 professionally removed five critical reviews within two weeks. Our rating rose from 3.4 to 4.6 – the business impact was immediate.','hero.role':'CEO, Private Clinic Düsseldorf','hero.stat1':'Success Rate','hero.stat2':'Removed','hero.stat3':'Ø Duration','lottie.title':'Excellence in reputation management','lottie.text':'More than 2,400 successfully removed reviews. Our clients benefit from discreet, legally sound solutions with proven results.','lottie.s1':'Ø Rating after','lottie.s2':'More new clients','lottie.s3':'Ø Processing time','feat.eye':'Our Services','feat.title':'Premium protection for your online reputation','feat.desc':'Tailored solutions for discerning businesses.','f1.t':'Success-Based','f1.p':'No fee without results. You pay only upon verified removal.','f2.t':'Legally Founded','f2.p':'Every measure is backed by applicable law and current platform guidelines.','f3.t':'Absolute Discretion','f3.p':'Confidentiality is non-negotiable. Your name remains protected.','f4.t':'Fast Results','f4.p':'On average 14 days until the successful removal of the review.','f5.t':'Personal Attention','f5.p':'A dedicated expert guides your case from the initial consultation to the result.','f6.t':'Long-Term Protection','f6.p':'Sustainable reputation safeguarding beyond the initial processing.','proc.eye':'Our Process','proc.title':'Four steps to your result','s1.t':'Review Analysis','s1.p':'Free examination of all reviews for legal vulnerabilities.','s2.t':'Strategy Development','s2.p':'Tailored plan for maximum success prospects.','s3.t':'Enforcement','s3.p':'Professional execution through all available legal channels.','s4.t':'Result','s4.p':'Review removed – only then are our services invoiced.','test.eye':'Client Testimonials','test.title':'What our clients say','t1.q':'"Four negative reviews removed in 12 days. The professionalism and discretion of Reputex24 convinced us completely."','t1.r':'Owner, Law Firm Cologne','t2.q':'"Finally a partner who understands what online reputation means for a business. Results-oriented and absolutely confidential."','t2.r':'Owner, Dental Practice Stuttgart','t3.q':'"The success-based model appealed to us immediately. No risk, clear communication and an excellent result."','t3.r':'CEO, Hotel Group Bavaria','faq.eye':'FAQ','faq.title':'Your questions – our answers','q1.q':'Is removing Google reviews legal?','q1.a':'Yes, absolutely. We use exclusively legal methods. Reviews that violate law or platform guidelines can be removed through legitimate channels.','q2.q':'What does "success-based" mean at Reputex24?','q2.a':'You pay exclusively upon successful removal. No success, no costs – guaranteed and without exception.','q3.q':'How long does the process take?','q3.a':'Typically 7 to 21 days. The exact duration depends on the complexity of the individual case.','q4.q':'Which reviews can be removed?','q4.a':'False claims, fake reviews, reviews from non-customers and violations of Google guidelines – we assess each case individually.','q5.q':'Does the reviewer find out about the removal?','q5.a':'No. The entire process is strictly confidential. The author is neither contacted nor informed.','cta.title':'Protect what matters.','cta.desc':'Free analysis – discover your options.','cta.submit':'Request Free Analysis →','ft.rights':'All rights reserved.','ft.privacy':'Privacy Policy','imp.h1':'Information according to § 5 TMG','imp.h2':'Contact','priv.title':'Privacy Policy','priv.h1':'1. Responsible Party','priv.h2':'2. Data Processing','priv.p2':'Personal data is processed only within the framework of legal provisions. Data collected via the contact form is used exclusively to process your inquiry and is not shared with third parties.','priv.h3':'3. Your Rights','priv.p3':'You have the right to information, correction, deletion, and restriction of processing. Contact us at info@reputex24.de.','ph.name':'Your Name','ph.company':'Company','ph.email':'Email Address','ph.msg':'Describe your concern...'}};
+    const T={de:{'nav.features':'Leistungen','nav.process':'Prozess','nav.testimonials':'Erfahrungen','nav.cta':'Beratung anfragen','hero.eyebrow':'Premium Reputationsmanagement','hero.title':'Ihr guter Ruf verdient den besten Schutz. Wir liefern ihn.','hero.text':'Reputex24 verbindet juristische Exzellenz mit diskretem Bewertungsmanagement – für Unternehmen, die keine Kompromisse eingehen. Erfolgsbasiert, vertraulich, wirkungsvoll.','hero.cta':'Kostenlose Analyse →','hero.link':'So funktioniert es →','hero.quote':'Reputex24 hat fünf kritische Bewertungen innerhalb von zwei Wochen professionell entfernt. Unser Rating stieg von 3,4 auf 4,6 – die Auswirkung auf das Geschäft war sofort spürbar.','hero.role':'Geschäftsführer, Privatklinik Düsseldorf','hero.stat1':'Erfolgsquote','hero.stat2':'Entfernt','hero.stat3':'Ø Dauer','lottie.title':'Exzellenz im Reputationsmanagement','lottie.text':'Mehr als 2.400 erfolgreich entfernte Bewertungen. Unsere Mandanten profitieren von diskreten, rechtssicheren Lösungen mit nachweisbaren Ergebnissen.','lottie.s1':'Ø Rating danach','lottie.s2':'Mehr Neukunden','lottie.s3':'Ø Bearbeitungszeit','feat.eye':'Unsere Leistungen','feat.title':'Premium-Schutz für Ihre Online-Reputation','feat.desc':'Maßgeschneiderte Lösungen für anspruchsvolle Unternehmen.','f1.t':'Erfolgsbasiert','f1.p':'Kein Honorar ohne Ergebnis. Sie zahlen ausschließlich bei nachgewiesener Löschung.','f2.t':'Juristisch fundiert','f2.p':'Jede Maßnahme stützt sich auf geltendes Recht und aktuelle Plattform-Richtlinien.','f3.t':'Absolute Diskretion','f3.p':'Vertraulichkeit ist für uns nicht verhandelbar. Ihr Name bleibt geschützt.','f4.t':'Schnelle Ergebnisse','f4.p':'Durchschnittlich 14 Tage bis zur erfolgreichen Entfernung der Bewertung.','f5.t':'Persönliche Betreuung','f5.p':'Ein dedizierter Experte begleitet Ihren Fall vom ersten Gespräch bis zum Ergebnis.','f6.t':'Langfristiger Schutz','f6.p':'Nachhaltige Reputation-Absicherung auch über die initiale Bearbeitung hinaus.','proc.eye':'Unser Prozess','proc.title':'Vier Schritte zu Ihrem Ergebnis','s1.t':'Bewertungsanalyse','s1.p':'Kostenlose Prüfung aller Bewertungen auf rechtliche Angriffspunkte.','s2.t':'Strategieentwicklung','s2.p':'Maßgeschneiderter Plan für maximale Erfolgsaussichten.','s3.t':'Durchsetzung','s3.p':'Professionelle Umsetzung über alle verfügbaren rechtlichen Wege.','s4.t':'Ergebnis','s4.p':'Bewertung gelöscht – erst dann erfolgt die Abrechnung.','test.eye':'Mandantenstimmen','test.title':'Das sagen unsere Mandanten','t1.q':'„Vier negative Bewertungen in 12 Tagen entfernt. Die Professionalität und Diskretion von Reputex24 haben uns restlos überzeugt."','t1.r':'Inhaber, Rechtsanwaltskanzlei Köln','t2.q':'„Endlich ein Partner, der versteht, was Online-Reputation für ein Unternehmen bedeutet. Ergebnisorientiert und absolut vertraulich."','t2.r':'Inhaberin, Zahnarztpraxis Stuttgart','t3.q':'„Das erfolgsbasierte Modell hat uns sofort angesprochen. Kein Risiko, klare Kommunikation und ein hervorragendes Ergebnis."','t3.r':'Geschäftsführer, Hotelgruppe Bayern','faq.eye':'Häufige Fragen','faq.title':'Ihre Fragen – unsere Antworten','q1.q':'Ist die Entfernung von Google-Bewertungen legal?','q1.a':'Ja, absolut. Wir nutzen ausschließlich legale Methoden. Bewertungen, die gegen Recht oder Plattform-Richtlinien verstoßen, können auf rechtmäßigem Weg entfernt werden.','q2.q':'Was bedeutet „erfolgsbasiert" bei Reputex24?','q2.a':'Sie zahlen ausschließlich bei erfolgreicher Löschung. Kein Erfolg, keine Kosten – garantiert und ohne Ausnahme.','q3.q':'Wie lange dauert der Prozess?','q3.a':'In der Regel 7 bis 21 Tage. Die genaue Dauer hängt von der Komplexität des jeweiligen Falls ab.','q4.q':'Welche Bewertungen können entfernt werden?','q4.a':'Unwahre Behauptungen, Fake-Bewertungen, Bewertungen von Nicht-Kunden sowie Verstöße gegen Google-Richtlinien – wir prüfen jeden Fall individuell.','q5.q':'Erfährt der Bewertende von der Entfernung?','q5.a':'Nein. Der gesamte Vorgang ist streng vertraulich. Der Verfasser wird weder kontaktiert noch informiert.','cta.title':'Schützen Sie, was zählt.','cta.desc':'Kostenlose Analyse – erfahren Sie Ihre Möglichkeiten.','cta.submit':'Kostenlose Analyse anfordern →','ft.rights':'Alle Rechte vorbehalten.','ft.privacy':'Datenschutz','cookie.text':'Diese Website verwendet keine Tracking-Cookies. Durch die Nutzung stimmen Sie unserer <a href="#" onclick="event.preventDefault();openModal(\'datenschutz\')">Datenschutzerklärung</a> zu.','cookie.btn':'Verstanden','mobile.cta':'Beratung anfragen','ft.built':'Webseite erstellt von <a href="https://imisofts.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;transition:color .3s">imisofts.com</a>','imp.h1':'Angaben gemäß § 5 TMG','imp.h2':'Kontakt','priv.title':'Datenschutzerklärung','priv.h1':'1. Verantwortlicher','priv.h2':'2. Datenverarbeitung','priv.p2':'Personenbezogene Daten werden nur im Rahmen gesetzlicher Bestimmungen verarbeitet. Über das Kontaktformular erhobene Daten dienen ausschließlich der Bearbeitung Ihrer Anfrage und werden nicht an Dritte weitergegeben.','priv.h3':'3. Ihre Rechte','priv.p3':'Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung. Kontaktieren Sie uns unter info@bewertungsschutz24.com.','ph.name':'Ihr Name','ph.company':'Unternehmen','ph.email':'E-Mail-Adresse','ph.msg':'Beschreiben Sie Ihr Anliegen...'},
+    en:{'nav.features':'Services','nav.process':'Process','nav.testimonials':'Reviews','nav.cta':'Request Consultation','hero.eyebrow':'Premium Reputation Management','hero.title':'Your reputation deserves the finest protection. We deliver it.','hero.text':'Reputex24 combines legal excellence with discreet review management – for businesses that accept no compromises. Success-based, confidential, effective.','hero.cta':'Free Analysis →','hero.link':'How it works →','hero.quote':'Reputex24 professionally removed five critical reviews within two weeks. Our rating rose from 3.4 to 4.6 – the business impact was immediate.','hero.role':'CEO, Private Clinic Düsseldorf','hero.stat1':'Success Rate','hero.stat2':'Removed','hero.stat3':'Ø Duration','lottie.title':'Excellence in reputation management','lottie.text':'More than 2,400 successfully removed reviews. Our clients benefit from discreet, legally sound solutions with proven results.','lottie.s1':'Ø Rating after','lottie.s2':'More new clients','lottie.s3':'Ø Processing time','feat.eye':'Our Services','feat.title':'Premium protection for your online reputation','feat.desc':'Tailored solutions for discerning businesses.','f1.t':'Success-Based','f1.p':'No fee without results. You pay only upon verified removal.','f2.t':'Legally Founded','f2.p':'Every measure is backed by applicable law and current platform guidelines.','f3.t':'Absolute Discretion','f3.p':'Confidentiality is non-negotiable. Your name remains protected.','f4.t':'Fast Results','f4.p':'On average 14 days until the successful removal of the review.','f5.t':'Personal Attention','f5.p':'A dedicated expert guides your case from the initial consultation to the result.','f6.t':'Long-Term Protection','f6.p':'Sustainable reputation safeguarding beyond the initial processing.','proc.eye':'Our Process','proc.title':'Four steps to your result','s1.t':'Review Analysis','s1.p':'Free examination of all reviews for legal vulnerabilities.','s2.t':'Strategy Development','s2.p':'Tailored plan for maximum success prospects.','s3.t':'Enforcement','s3.p':'Professional execution through all available legal channels.','s4.t':'Result','s4.p':'Review removed – only then are our services invoiced.','test.eye':'Client Testimonials','test.title':'What our clients say','t1.q':'"Four negative reviews removed in 12 days. The professionalism and discretion of Reputex24 convinced us completely."','t1.r':'Owner, Law Firm Cologne','t2.q':'"Finally a partner who understands what online reputation means for a business. Results-oriented and absolutely confidential."','t2.r':'Owner, Dental Practice Stuttgart','t3.q':'"The success-based model appealed to us immediately. No risk, clear communication and an excellent result."','t3.r':'CEO, Hotel Group Bavaria','faq.eye':'FAQ','faq.title':'Your questions – our answers','q1.q':'Is removing Google reviews legal?','q1.a':'Yes, absolutely. We use exclusively legal methods. Reviews that violate law or platform guidelines can be removed through legitimate channels.','q2.q':'What does "success-based" mean at Reputex24?','q2.a':'You pay exclusively upon successful removal. No success, no costs – guaranteed and without exception.','q3.q':'How long does the process take?','q3.a':'Typically 7 to 21 days. The exact duration depends on the complexity of the individual case.','q4.q':'Which reviews can be removed?','q4.a':'False claims, fake reviews, reviews from non-customers and violations of Google guidelines – we assess each case individually.','q5.q':'Does the reviewer find out about the removal?','q5.a':'No. The entire process is strictly confidential. The author is neither contacted nor informed.','cta.title':'Protect what matters.','cta.desc':'Free analysis – discover your options.','cta.submit':'Request Free Analysis →','ft.rights':'All rights reserved.','ft.privacy':'Privacy Policy','cookie.text':'Diese Website verwendet keine Tracking-Cookies. Durch die Nutzung stimmen Sie unserer <a href="#" onclick="event.preventDefault();openModal(\'datenschutz\')">Datenschutzerklärung</a> zu.','cookie.btn':'Verstanden','mobile.cta':'Beratung anfragen','cookie.text':'Diese Website verwendet keine Tracking-Cookies. Durch die Nutzung stimmen Sie unserer <a href="#" onclick="event.preventDefault();openModal(\'datenschutz\')">Datenschutzerklärung</a> zu.','cookie.btn':'Verstanden','cookie.text':'This website does not use tracking cookies. By using it, you agree to our <a href="#" onclick="event.preventDefault();openModal(\'datenschutz\')">Privacy Policy</a>.','cookie.btn':'Got it','mobile.cta':'Request Consultation','ft.built':'Website built by <a href="https://imisofts.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;transition:color .3s">imisofts.com</a>','imp.h1':'Information according to § 5 TMG','imp.h2':'Contact','priv.title':'Privacy Policy','priv.h1':'1. Responsible Party','priv.h2':'2. Data Processing','priv.p2':'Personal data is processed only within the framework of legal provisions. Data collected via the contact form is used exclusively to process your inquiry and is not shared with third parties.','priv.h3':'3. Your Rights','priv.p3':'You have the right to information, correction, deletion, and restriction of processing. Contact us at info@bewertungsschutz24.com.','ph.name':'Your Name','ph.company':'Company','ph.email':'Email Address','ph.msg':'Describe your concern...'}};
 
     let currentLang='de';
 
@@ -870,6 +967,19 @@
     document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){const h=this.getAttribute('href');if(h!=='#'){e.preventDefault();closeMenu();setTimeout(()=>document.querySelector(h)?.scrollIntoView({behavior:'smooth'}),100)}}));
 
     setTimeout(()=>{const p=document.getElementById('lottiePlayer');const f=document.getElementById('lottieFallback');if(!p||!p.shadowRoot||!p.shadowRoot.querySelector('canvas,svg')){if(p)p.style.display='none';f.style.display='flex'}},4000);
-    </script>
-</body>
+    
+    const stb=document.getElementById('scrollTop');window.addEventListener('scroll',()=>stb.classList.toggle('visible',window.scrollY>500));
+    
+    document.querySelector('.contact-form')?.addEventListener('submit',function(){const b=this.querySelector('.c-submit');b.classList.add('loading');b.innerHTML=(currentLang==='de'?'Wird gesendet...':'Sending...');});
+    
+    const sections=document.querySelectorAll('section[id]');const navLinks=document.querySelectorAll('.nav-center a');window.addEventListener('scroll',()=>{let c='';sections.forEach(s=>{if(window.scrollY>=s.offsetTop-200)c=s.getAttribute('id')});navLinks.forEach(l=>{l.style.color=l.getAttribute('href')==='#'+c?'var(--white)':''});});
+    
+    const mcta=document.getElementById('mobileCta');if(mcta){window.addEventListener('scroll',()=>{const h=document.querySelector('.hero');if(h){mcta.style.transform=window.scrollY>h.offsetHeight?'translateY(0)':'translateY(100%)'}});mcta.style.transform='translateY(100%)';mcta.style.transition='transform .3s';}
+    
+    if(!localStorage.getItem('cookie_ok')){setTimeout(()=>document.getElementById('cookieBar')?.classList.remove('hidden'),1500);}
+    
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenu();document.querySelectorAll('.modal.active').forEach(m=>{m.classList.remove('active');document.body.style.overflow=''});}});
+    
+    document.querySelectorAll('.contact-form input[required],.contact-form textarea[required]').forEach(el=>{el.addEventListener('invalid',function(){if(this.type==='email'){this.setCustomValidity(currentLang==='de'?'Bitte geben Sie eine gültige E-Mail-Adresse ein.':'Please enter a valid email address.')}else{this.setCustomValidity(currentLang==='de'?'Bitte füllen Sie dieses Feld aus.':'Please fill in this field.')}});el.addEventListener('input',function(){this.setCustomValidity('')});});
+    </script></body>
 </html>
